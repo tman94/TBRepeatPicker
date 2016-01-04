@@ -37,7 +37,7 @@ import Foundation
     case WeekendDay = 9
 }
 
-class TBRecurrence: NSObject {
+public class TBRecurrence: NSObject {
     /** The frequency of recurrence, must be one of the following cases:
     * TBRPFrequency.Daily
     * TBRPFrequency.Weekly
