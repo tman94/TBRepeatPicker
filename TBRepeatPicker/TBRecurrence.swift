@@ -241,7 +241,7 @@ public class TBRecurrence: NSObject {
         return weeklyRecurrence
     }
     
-    class func initMonthly(interval: Int, var selectedMonthdays: [Int], occurrenceDate: NSDate) -> TBRecurrence {
+    class public func initMonthly(interval: Int, var selectedMonthdays: [Int], occurrenceDate: NSDate) -> TBRecurrence {
         let monthlyRecurrence = TBRecurrence(occurrenceDate: occurrenceDate)
         monthlyRecurrence.frequency = .Monthly
         monthlyRecurrence.byWeekNumber = false
