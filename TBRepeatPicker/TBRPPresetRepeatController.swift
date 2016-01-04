@@ -21,7 +21,7 @@ public class TBRPPresetRepeatController: UITableViewController, TBRPCustomRepeat
     var language: TBRPLanguage = .English
     var delegate: TBRepeatPickerDelegate?
     
-    var recurrence: TBRecurrence? {
+    public var recurrence: TBRecurrence? {
         didSet {
             setupSelectedIndexPath(recurrence)
         }
